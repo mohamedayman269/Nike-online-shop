@@ -13,10 +13,13 @@
 }
 
 .navPage2 .logo {
+    margin-left: 5%;
+}
+
+.navPage2 .logo img {
     width: 64px;
     height: 64px;
     filter: drop-shadow(1px 2px 1px #93ca00);
-    margin-left: 5%;
 }
 
 .navPage2 ul {
@@ -75,6 +78,18 @@
     }
 /*search input CSS (end)*/
 
+.sort {
+    display: flex;
+    gap: 3%;
+}
+
+.sort #sort-options {
+    height: 3vh;
+    margin-top: 1.5%;
+    border-style: none;
+    font-size: 19px;
+}
+
 .page_title {
     font-size: 28px;
     margin-left: 2%;
@@ -98,7 +113,91 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-right: 1px solid black;
 }
+
+.container .container_l .typeFilters {
+    display: inline-block;
+    padding-bottom: 10%;
+}
+
+/*controls CSS*/
+
+.accordion-container {
+    width: 90%;
+    /* max-width: 100%; */
+    margin: auto;
+    margin-top: 5%;
+}
+
+.accordion-content {
+    display: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content input {
+    margin-bottom: 10%;
+}
+
+/* .accordion-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+} */
+
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.btn {
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    text-align: left;
+    box-sizing: border-box;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.p_m {
+    font-size: 15px;
+    margin: 0;
+}
+
+ul.ul_m {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons_m li {
+    margin: 0;
+    padding: 0;
+}
+
+/**/
+
 .container_r {
     width: 80%;
     /* border: 10px solid red; */
